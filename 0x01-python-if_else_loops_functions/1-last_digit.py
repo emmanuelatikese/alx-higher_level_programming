@@ -8,4 +8,4 @@ elif int(num[len(num)-1])>5:
     a ="greater than 5"
 else:
     a = "less than 6 and not 0"
-print(f"Last digit of {number} is {num[len(num)-1} and is {a}")
+print(f"Last digit of {number} is {num[len(num)-1]} and is {a}")
