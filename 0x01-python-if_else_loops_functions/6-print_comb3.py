@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-for a in range(0, 100):
-    if a < 9:
-        a = "0" + str(a)
-    if int(a) // 10 > int(a) % 10 or int(a) // 10 == int(a) % 10:
-        continue
-    if int(a) < 89:
-        a = str(a) + ',' + " "
-    print(('{:}').format(str(a)), end='')
-print('\n')
+for n in range(0, 10):
+    for n2 in range(0, 10):
+        if n is 8 and n2 is 9:
+            print("{:d}{:d}".format(n, n2))
+        elif n < n2:
+            print("{:d}{:d}".format(n, n2), end=", ")
