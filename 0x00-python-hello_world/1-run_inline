@@ -1,2 +1,2 @@
 #!/bin/bash
-execfile(PYCODE)
+python3 $PYFILE
