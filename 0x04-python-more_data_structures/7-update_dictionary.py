@@ -4,7 +4,6 @@ def update_dictionary(a_dictionary, key, value):
         for k in a_dictionary.keys():
             if key == k:
                 a_dictionary[k] = value
-            elif a_dictionary[k] == value:
+            else:
                 a_dictionary[key] = value
-            a_dictionary[key] = value
     return a_dictionary
