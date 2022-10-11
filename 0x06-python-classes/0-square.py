@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""Square is a empty class"""
+"""Square is a empty class."""
 
 class Square:
-    """Class Square has no attributes"""
+    """Class Square has no attributes."""
 
-    pass 
+    pass

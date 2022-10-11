@@ -1,16 +1,18 @@
 #!/usr/bin/python3
+"""Square is a class"""
+
 class Square:
+    """Square has attributes"""
+
     def __init__(self, size=0):
+        """ The class is then initialize"""
+
+        if isinstance(size, int) == False:
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
         self.size = size
     def area(self):
+        """Area is a function """
+
         return pow(self.size, 2)
-    @size.property
-    def size(self):
-        return self.size
-    @size.setter
-    def size(self, value):
-        if isinstance(self.size, int) == False:
-            raise TypeError("size must be an integer")
-        elif self.size < 0:
-           raise ValueError("size must be >= 0")
-        self.size = value 
