@@ -17,24 +17,24 @@ listint_t *insert_node(listint_t **head, int number){
 
     if (ptr == NULL || (ptr->next == NULL && tmp->n < ptr->n)){
         tmp->next = ptr;
-        ptr = tmp
+        ptr = tmp;
         return ptr;
     }
     while(ptr != NULL){
         ptr = ptr->next;
-        prev = ptr
+        prev = ptr;
         next = ptr->next;
 
         if (tmp->n <= ptr->n){
             current->next = tmp;
             tmp->next = prev;
-            return *head;
+            return tmp;
         }
         current = prev;
         if(tmp->n > ptr->n){
             prev->next = tmp;
             tmp->next = next;
-            return *head;
+            return tmp;
         }
     }
 }
