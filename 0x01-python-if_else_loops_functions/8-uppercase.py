@@ -7,4 +7,4 @@ def uppercase(str):
         if x in lower:
             x = upper[lower.index(x)]
         result += x
-    print(result)
+    print("{}".format(result))
