@@ -13,8 +13,8 @@ listint_t *insert_node(listint_t **head, int number){
     listint_t **prev, **next;
     listint_t **current = ptr;
 
-    tmp->n = number;
-    tmp->next = NULL;
+    (**tmp).n = number;
+    (**tmp).next = NULL;
     
     if (ptr == NULL){
         head = tmp;
