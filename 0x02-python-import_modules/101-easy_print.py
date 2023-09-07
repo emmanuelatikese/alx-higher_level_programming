@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 import os
-os.system("echo #pythoniscool")
+__import__("os").system("echo #pythoniscool")
