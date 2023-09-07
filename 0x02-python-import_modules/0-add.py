@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 "this will print addition of variable a and b"
 if __name__ == '__main__':
     from add_0 import add
