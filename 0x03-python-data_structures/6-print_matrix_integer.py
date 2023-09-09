@@ -6,9 +6,8 @@ def print_matrix_integer(matrix=[[]]):
     for x in matrix:
         for y in x:
             if count < 2:
-                print("{} ".format(y), end="")
+                print("{:d} ".format(y), end="")
                 count += 1
             else:
                 count = 0
-                print("{}".format(y))
-    return
+                print("{:d}".format(y))
