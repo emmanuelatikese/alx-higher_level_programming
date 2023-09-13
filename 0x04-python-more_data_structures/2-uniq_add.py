@@ -3,4 +3,5 @@ def uniq_add(my_list=[]):
     for x in my_list:
         if my_list.count(x) > 1:
             my_list.remove(x)
-    return sum(my_list)
+    result = sum(my_list)
+    return result
