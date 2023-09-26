@@ -13,4 +13,4 @@ class Square:
 
     """this just square the size of the function that all"""
 
-    def area(self): return (self._Square__size)**2
+    def area(self): return (self._Square__size**2)
