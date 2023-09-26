@@ -13,4 +13,4 @@ this init function do get a lot of things going for sure
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
-        self._Square_size = size
+        self._Square__size = size
