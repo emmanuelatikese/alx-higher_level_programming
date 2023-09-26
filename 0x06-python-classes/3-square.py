@@ -9,7 +9,8 @@ class Square:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
-        self._Square__size = size
+        else:
+            self._Square__size = size
 
     """this just square the size of the function that all"""
 
