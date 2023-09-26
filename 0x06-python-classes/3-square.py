@@ -10,8 +10,10 @@ class Square:
         elif size < 0:
             raise ValueError("size must be >= 0")
         else:
-            self._Square__size = size
+            self.__size = size
 
     """this just square the size of the function that all"""
 
-    def area(self): return (self._Square__size**2)
+    def area(self):
+        """this area function got all some on it hand"""
+        return (self.__size**2)
