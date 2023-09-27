@@ -35,6 +35,8 @@ class Square:
         if self._Square__size == 0:
             print()
         else:
+            for i in range(self.new_pos[1]):
+                print("")
             result = ""
             if self.new_pos[0] > 0:
                 for y in range(self.new_pos[0]):
