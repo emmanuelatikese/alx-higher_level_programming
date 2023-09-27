@@ -43,7 +43,8 @@ class Square:
                     result += " "
             for i in range(self._Square__size):
                 result += "#"
-            for c in range(self._Square__size): print(result)
+            for c in range(self._Square__size):
+                print(result)
 
     @property
     def position(self): return self.new_pos
