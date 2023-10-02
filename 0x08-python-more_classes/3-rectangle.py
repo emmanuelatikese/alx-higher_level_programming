@@ -52,6 +52,6 @@ class Rectangle:
         for x in range(self.__height):
             for y in range(self.__width):
                 new_list.append("#")
-            if x != self.__height:
+            if x != self.__height - 1:
                 new_list.append("\n")
         return "".join(new_list)
