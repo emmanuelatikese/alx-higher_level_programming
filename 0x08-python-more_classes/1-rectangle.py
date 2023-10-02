@@ -4,6 +4,8 @@
 
 
 class Rectangle:
+    """this initialize"""
+
     def __init__(self, width=0, height=0):
         if type(height) != int:
             raise TypeError("height must be an integer")
