@@ -78,4 +78,6 @@ class Rectangle:
         print("Bye rectangle...")
 
     @classmethod
-    def square(cls, size=0): return cls(size, size)
+    def square(cls, size=0):
+        """this is some comment"""
+        return cls(size, size)
