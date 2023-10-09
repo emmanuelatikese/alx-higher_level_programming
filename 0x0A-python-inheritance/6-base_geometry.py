@@ -5,4 +5,4 @@
 class BaseGeometry:
     """this function not initialize"""
     def area(self):
-        return raise Exception("area is not implemnted")
+        raise Exception("area() is not implemnted")
