@@ -2,4 +2,6 @@
 """this function return dir of an object"""
 
 
-def lookup(obj): return dir(obj)
+def lookup(obj):
+    """this returns dir of an object for sure"""
+    return dir(obj)
