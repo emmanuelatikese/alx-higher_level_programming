@@ -4,4 +4,6 @@
 
 def inherits_from(obj, a_class):
     """returns true or false"""
-    return True if isinstance(obj, a_class) else False
+    if isinstance(obj, a_class) and type(obj) != a_class:
+        return True
+    return False
