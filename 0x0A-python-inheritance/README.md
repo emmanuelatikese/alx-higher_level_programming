@@ -8,3 +8,5 @@ This project delves into the application of inheritance in Python, a foundationa
 
 2. 1-my_list.py: It contains a class that takes the attributes of a built-in list class and also a function that prints list in ascending order.
 
+3.2-is_same_class.py: It checks the instance or type of an element and returns true or false.
+
