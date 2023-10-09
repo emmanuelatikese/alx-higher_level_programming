@@ -1,0 +1,57 @@
+Testing file: 1-my_list.py
+
+Test 1: importing and print file docstring 
+
+>>> l = __import__("1-my_list").__doc__
+>>> print(l)
+this class inherit list
+
+Test2: importing and print class docstring in file and also checking length
+
+>>> l = __import__("1-my_list").MyList.__doc__
+>>> print(l)
+this class begins
+>>> len(l) > 1
+True
+
+Test 3: importing docstring print_sorted function in class and checking the length
+
+>>> l = __import__("1-my_list").MyList.print_sorted.__doc__
+>>> print(l)
+return print sorted list
+>>> len(l)
+24
+
+Test 4: importing the class in the file
+
+>>> a = __import__("1-my_list").MyList
+>>> print(a)
+<class '1-my_list.MyList'>
+
+Test 5: checking if the class is empty
+
+>>> print(a())
+[]
+
+Test 6: appending elements and printing the element
+
+>>> a = __import__("1-my_list").MyList()
+>>> a.append(1)
+>>> a.append(12)
+>>> a.append(-1)
+>>> a.append(20)
+>>> print(a)
+[1, 12, -1, 20]
+
+Test 7: sorting the list and poping an element
+
+>>> a.print_sorted()
+[-1, 1, 12, 20]
+>>> a.pop()
+20
+
+Test 8: inserting element in the list
+
+>>> a.insert(2, 1)
+>>> print(a)
+[1, 12, 1, -1]
