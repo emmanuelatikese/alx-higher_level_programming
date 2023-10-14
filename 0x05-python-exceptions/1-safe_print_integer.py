@@ -6,6 +6,6 @@ def safe_print_integer(value):
     """this is quite new"""
     try:
         print("{:d}".format(value))
+        return True
     except ValueError:
         return False
-    return True
