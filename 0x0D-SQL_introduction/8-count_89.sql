@@ -1,3 +1,3 @@
 -- This count the number of output
 -- This is the code below
-SELECT count(*) from first_table where id = 89;
+SELECT row_number(*) from first_table where id = 89;
