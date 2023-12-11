@@ -8,7 +8,7 @@ const num = parseInt(argv[2]);
 
 if (num) {
   let i = 0;
-  let str = ''
+  let str = '';
   while (i < num) {
     str = str + 'X';
     i++;

@@ -4,7 +4,7 @@
 
 const { argv } = require('node:process');
 
-function factorial(a) {
+function factorial (a) {
 	const num = parseInt(a);
 	if (!(num) || num < 1) {
 	  return (1);
