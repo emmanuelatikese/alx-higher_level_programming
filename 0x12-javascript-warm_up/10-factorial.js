@@ -5,12 +5,11 @@
 const { argv } = require('node:process');
 
 function factorial(a) {
-	if (!(a) || parseInt(a) <= 1) {
+	const num = parseInt(a);
+	if (!(num) || num < 1) {
 	  return (1);
-	} else if (parseInt(a) && a.length <= 2) {
-	  return (a * factorial(a - 1));
 	} else {
-	  return ('Infinity');
+	    return (num * factorial(num - 1));
 	}
 }
 
