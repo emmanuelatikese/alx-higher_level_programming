@@ -1,22 +1,8 @@
 #!/usr/bin/node
 
-// square things
-
-const { argv } = require('node:process');
-
-const num = parseInt(argv[2]);
-
-if (num) {
-  let i = 0;
-  let str = '';
-  while (i < num) {
-    str = str + 'X';
-    i++;
-  }
-  i = 0;
-  while (i < num) {
-    console.log(str);
-    i++;
+if (parseInt(process.argv[2])) {
+  for ( let i = 0; i < parseInt(process.argv[2]); i++) {
+    console.log('X'.repeat(parseInt(process.argv[2])).replace(' ',''));
   }
 } else {
   console.log('Missing size');
