@@ -1,16 +1,10 @@
 #!/usr/bin/node
 
-// factorial recursive ooh nooo
-
-const { argv } = require('node:process');
-
-function factorial (a) {
-	const num = parseInt(a);
-	if (!(num) || num < 1) {
-	  return (1);
-	} else {
-	    return (num * factorial(num - 1));
-	}
+function fact (n) {
+  if (n <= 1 || !(n)) {
+    return (1);
+  }
+  return (n * fact(n - 1));
 }
 
-console.log(factorial(argv[2]));
+console.log(fact(parseInt(process.argv[2])));
