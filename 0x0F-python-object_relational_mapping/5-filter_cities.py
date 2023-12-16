@@ -21,6 +21,6 @@ if __name__ == '__main__':
         print(" ", end="") if ned != 0 else ''
         print("{}".format(pr[ned][0]), end="")
         print(",", end="") if ned < len(pr) - 1 else ''
-    print('\n') 
+    print('\n')
     ex.close()
     my_con.close()
