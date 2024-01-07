@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 '''This is all about the error we don't want.'''
 if __name__ == '__main__':
     from urllib.request import Request, urlopen
