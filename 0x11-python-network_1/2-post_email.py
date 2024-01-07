@@ -10,4 +10,4 @@ if __name__ == '__main__':
     data = urlencode({'email': argv[2]}).encode('ascii')
     req = Request(url, data)
     with urlopen(req) as f:
-        print(f.read())
+        print(f.read().decode())
