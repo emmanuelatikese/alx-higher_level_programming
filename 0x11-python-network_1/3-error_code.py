@@ -8,7 +8,7 @@ if __name__ == '__main__':
     try:
         req = Request(argv[1])
     except HTTPError as e:
-        print('Error code: %s' % e.code)
+        print('Error code:', e.code)
     else:
         with urlopen(req) as f:
             print(f.read().decode('utf-8'))
