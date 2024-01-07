@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """This is all about urllib norhing else"""
-import urllib.request
-
 if __name__ == '__main__':
+    import urllib.request
+
     url = "https://alx-intranet.hbtn.io/status"
     req = urllib.request.Request(url)
 
