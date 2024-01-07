@@ -1,15 +1,15 @@
 #!/usr/bin/python3
 """This is all about urllib norhing else"""
-from urllib.request import Request, urlopen
+import urllib.request
 
 url = "https://alx-intranet.hbtn.io/status"
 
-req = Request(url)
+req = urllib.request.Request(url)
 result = """Body response:
     - type: {}
     - content: {}
     - utf8 content: {}"""
 
-with urlopen(req) as f:
+with urllib.request.urlopen(req) as f:
     page = f.read()
 print(result.format(type(page), page, page.decode()))
