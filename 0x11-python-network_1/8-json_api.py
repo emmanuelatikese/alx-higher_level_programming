@@ -8,9 +8,9 @@ if __name__ == "__main__":
     lt = argv[1] or ''
     try:
         req = post('http://0.0.0.0:5000/search_user', data={'q': lt}).json()
-    except:
+    except ValueError:
         print('Not a valid JSON')
-    else ValueError:
+    else:
         if req:
             print('[{}] {}'.format(req.get('id'), req.get('name')))
         else:
