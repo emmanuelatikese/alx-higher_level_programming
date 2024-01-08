@@ -10,9 +10,8 @@ if __name__ == "__main__":
         req = post('http://0.0.0.0:5000/search_user', data={'q': lt}).json()
     except:
         print('Not a valid JSON')
-    elif req:
-        print('[{}] {}'.format(req.get('id'), req.get('name')))
-    else:
-        print('No result')
-
-
+    else ValueError:
+        if req:
+            print('[{}] {}'.format(req.get('id'), req.get('name')))
+        else:
+            print('No result')
