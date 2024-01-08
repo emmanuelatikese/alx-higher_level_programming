@@ -5,12 +5,14 @@ if __name__ == "__main__":
     from requests import get, post
     from sys import argv
 
-    if len(argv) == 2:
-        req = get('http://0.0.0.0:5000/search_user')
-        if argv[2] in req:
-            print('[{}] {}'.format(req['id'], req['name']))
-        else:
-            print('No result')
+    lt = argv[1] or ''
+    try:
+        req = post('http://0.0.0.0:5000/search_user', data={'q': lt}).json()
+    except:
+        print('Not a valid JSON')
+    elif req:
+        print('[{}] {}'.format(req.get('id'), req.get('name')))
     else:
-        req = post('http://0.0.0.0:5000/search_user', data={'q': ''})
         print('No result')
+
+
