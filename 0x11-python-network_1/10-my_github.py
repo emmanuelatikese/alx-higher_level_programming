@@ -5,6 +5,7 @@ if __name__ == '__main__':
     from sys import argv
     username = argv[1]
     password = argv[2]
-    req = requests.get('https://api.github.com/user', auth=(username, password))
+    auth=(username, password)
+    req = requests.get('https://api.github.com/user', auth=auth)
     res = req.json()
     print(res.get('id'))
