@@ -4,7 +4,8 @@
 if __name__ == '__main__':
     import requests
     from sys import argv
-    v1, v2 = argv[1], argv[2]
+    v1 = argv[1]
+    v2 = argv[2]
     req = requests.get('https://api.github.com/repos/{}/{}/commits'
                        .format(v1, v2))
     res = req.json()
