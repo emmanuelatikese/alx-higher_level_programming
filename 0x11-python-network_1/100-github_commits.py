@@ -9,7 +9,7 @@ if __name__ == '__main__':
         repo = argv[1]
         owner = argv[2]
         req = requests.get('https://api.github.com/repos/{}/{}/commits'
-                           .format(repo, owner))
+                           .format(owner, repo))
         res = req.json()
         for x in range(0, 10):
             print('{}: {}'.format(res[x].get('sha'), res[x].get('commit')
