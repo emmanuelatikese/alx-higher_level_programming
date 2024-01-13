@@ -12,8 +12,7 @@ if __name__ == '__main__':
                            .format(v1, v2))
         res = req.json()
         for x in range(0, 10):
-            sha = res[x].get('sha')
-            author = res[x].get('commit').get('author').get('name')
-            print('{}: {}'.format(sha, author))
-    except:
+            print('{}: {}'.format(res[x].get('sha'), res[x].get('commit')
+                                  .get('author').get('name')))
+    except IndexError:
         pass
