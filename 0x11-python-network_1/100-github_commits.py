@@ -6,10 +6,10 @@ if __name__ == '__main__':
     from sys import argv
 
     try:
-        v1 = argv[1]
-        v2 = argv[2]
+        repo = argv[1]
+        owner = argv[2]
         req = requests.get('https://api.github.com/repos/{}/{}/commits'
-                           .format(v1, v2))
+                           .format(repo, owner))
         res = req.json()
         for x in range(0, 10):
             print('{}: {}'.format(res[x].get('sha'), res[x].get('commit')
