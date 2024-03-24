@@ -1,8 +1,8 @@
 -- creating a database and a table known as cities
-create database if not exists hbtn_0d_usa;
-create table if not exists hbtn_0d_usa.cities (
-	id int unique auto_increment primary key not null,
-	name varchar(256) not null,
-	state_id int not null,
-	foreign key (state_id) references states(id)
+create DATABASE IF NOT EXISTS hbtn_0d_usa;
+create TABLE IF NOT EXISTS hbtn_0d_usa.cities (
+	id INT UNIQUE AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	name VARCHAR(256) NOT NULL,
+	state_id INT NOT NULL,
+	FOREIGN KEY (state_id) REFERENCES states(id)
 );
