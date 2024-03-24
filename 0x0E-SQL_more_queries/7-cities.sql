@@ -3,6 +3,6 @@ create database if not exists hbtn_0d_usa;
 create table if not exists hbtn_0d_usa.cities (
 	id int unique auto_increment primary key not null,
 	name varchar(256) not null,
-	state_id int,
+	state_id int not null,
 	foreign key (state_id) references states(id)
 );
